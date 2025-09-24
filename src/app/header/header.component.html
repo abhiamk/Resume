@@ -1,0 +1,21 @@
+<div class="navbar navbar-expand-sm navbar-dark justify-content-center fixed-top" style="background-color: #fff;"
+    role="navigation">
+    <div class="container justify-content-center"> <!-- Add container to centralize -->
+        <a class="navbar-brand mx-auto font-bold" href="#" style="font-size: x-large;">Abhishek M</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto"> <!-- Use mx-auto to center the nav links -->
+                <li *ngFor="let item of routeData" class="nav-item"
+                    [ngClass]="activeRoute === item.name ? 'active' : ''" (click)="routeChange(item.name)">
+                    <a class="nav-link" href="{{'#'+item.name}}">
+                        <span [ngClass]="activeRoute === item.name ? 'route-text' : ''">{{item.name}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

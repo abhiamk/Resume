@@ -1,0 +1,74 @@
+/* In your styles.css or styles.scss */
+.custom-font {
+  font-family: "Playwrite GB S", sans-serif;
+}
+
+pre {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  overflow: auto;
+}
+
+code {
+  color: #f8f8f2;
+  font-family: "Fira Code", monospace;
+}
+
+.container {
+  background-image: url("~src/assets/Images/marbaldesign.jpeg");
+}
+
+pre {
+  background-color: transparent;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, blue, yellow, green, blue) 1;
+  padding: 10px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Glowing effect*/
+}
+
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+
+.custom-linkedin-icon {
+  font-size: 48px; /* Increase the size */
+  color: #0077b5; /* LinkedIn official blue color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.custom-linkedin-icon:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Darker shade of LinkedIn blue on hover */
+  transform: scale(1); /* Slightly enlarge on hover */
+}
+
+/* Optional: You can wrap the icon inside a container and center it */
+.icon-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-info {
+  display: flex; /* Display as a flex container */
+  align-items: center; /* Align icons and text vertically */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* White text color */
+}
+
+.contact-icon {
+  font-size: 20px; /* Size of the icons */
+  color: #0077b5; /* Color of the icons (can match your branding) */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-item:hover .contact-icon {
+  color: #ff5722; /* Change icon color on hover */
+}

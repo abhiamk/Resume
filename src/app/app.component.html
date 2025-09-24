@@ -1,0 +1,41 @@
+<div class="">
+
+    <app-header>
+    </app-header>
+    <div style="background-image: url('assets/Images/headerbg.png');">
+
+        <section class="container">
+            <div id="Home" class="tab-pane active mt-5">
+                <app-home></app-home>
+            </div>
+            <div id="About" class="tab-pane active">
+                <app-about></app-about>
+            </div>
+            <div id="Experience" class="tab-pane active">
+                <app-experience></app-experience>
+            </div>
+            <div id="Skills" class="tab-pane active">
+                <app-skills></app-skills>
+            </div>
+            <div id="Resume" class="tab-pane active">
+                <app-resume></app-resume>
+            </div>
+            <div id="Education" class="tab-pane active">
+                <app-education></app-education>
+            </div>
+            <div id="Contact" class="tab-pane active">
+                <app-contact></app-contact>
+            </div>
+
+            <!-- <div class="go-to-top" [ngClass]="{'show-scrollTop': windowScrolled}"> -->
+            <button type="button" [ngClass]="{'show-scrollTop': windowScrolled}" class="btn go-to-top"
+                data-toggle="button" aria-pressed="true" (click)="onWindowScroll()">
+                ↑
+            </button>
+            <!-- </div> -->
+
+
+        </section>
+    </div>
+    <!-- <app-footer></app-footer> -->
+</div>

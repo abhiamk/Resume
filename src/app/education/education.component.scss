@@ -1,0 +1,72 @@
+.jumbotron {
+  padding: 30px; /* Adjust padding for spacing */
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .img-fluid {
+    max-height: 200px; /* Optional: Adjust image height for smaller screens */
+  }
+}
+
+// .card {
+//   position: relative;
+//   border-radius: 15px;
+//   overflow: hidden;
+//   transition: transform 0.3s;
+//   cursor: pointer;
+// }
+
+.card-body {
+  position: relative;
+  z-index: 1; /* Ensure text is above the background */
+  background-image: url("~src/assets/Images/headerbg.png");
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  backdrop-filter: blur(10px); /* Blur the background behind the card */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: adds a subtle border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Space inside the card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.glass:hover {
+  background: rgba(68, 2, 85, 0.2); /* Change background on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px; /* Match card's border radius */
+  box-shadow: 0 0 20px rgba(74, 4, 92, 0.7); /* Glowing effect */
+  pointer-events: none; /* Prevent blocking mouse events */
+  z-index: 0; /* Below the card body */
+  transition: box-shadow 0.3s; /* Smooth glow effect */
+}
+
+.img-fluid {
+  border-radius: 10px; /* Rounded corners for the image */
+  max-height: 250px; /* Optional: Set a max height for the image */
+}
+
+.video-background {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the area */
+  z-index: -1; /* Place it behind other elements */
+  background-color: transparent;
+}

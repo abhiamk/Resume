@@ -1,0 +1,28 @@
+<div class="jumbotron text-center" data-aos="fade-up">
+
+    <h1 class="custom-font text-info text-center">Technical Skills</h1>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Skill Card -->
+            <div class="col-md-6 mb-4" *ngFor="let skill of skills">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body d-flex align-items-start">
+                        <div class="mr-3">
+                            <i [class]="skill.icon + ' fa-2x text-primary'"></i>
+                        </div>
+                        <div>
+                            <h5 class="card-title font-weight-bold mb-1">{{ skill.title }}</h5>
+                            <p class="card-text text-muted">{{ skill.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- <div class="custom-font">
+    This text uses the Playwrite GB S font.
+</div> -->
